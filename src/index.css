@@ -1,0 +1,346 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #EAE2D7;
+  --color-surface-dim: #DFD5C7;
+  --color-surface-bright: #F4EFE7;
+  --color-surface-container-lowest: #F6F1EA;
+  --color-surface-container-low: #F2ECE3;
+  --color-surface-container: #EDE5DA;
+  --color-surface-container-high: #E5DBCE;
+  --color-surface-container-highest: #DBD0C1;
+  --color-on-surface: #171412;
+  --color-on-surface-variant: #574E45;
+  --color-outline: #A99B8C;
+  --color-outline-variant: #D8CCBE;
+  --color-primary: #171412;
+  --color-primary-container: #171412;
+  --color-on-primary: #F6F1EA;
+  --color-on-primary-container: #F6F1EA;
+  --color-secondary: #D4AF37;
+  --color-secondary-container: #EFE5C8;
+  --color-on-secondary: #171412;
+  --color-on-secondary-container: #5C460B;
+  --color-tertiary: #B76E79;
+  --color-tertiary-container: #F2DCE0;
+  --color-blush: #F2DCE0;
+  --color-sage: #DCE5DC;
+  --color-gold: #D4AF37;
+  --color-rosegold: #B76E79;
+  --color-error: #9E2A3B;
+  --color-error-container: #F5D7DC;
+  --color-on-error: #F6F1EA;
+  --color-on-error-container: #5E111E;
+  --color-safe: #3E6B4E;
+  --color-crimson: #9E2A3B;
+
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Playfair Display", "Instrument Serif", Georgia, serif;
+  --font-serif: "Playfair Display", "Instrument Serif", Georgia, serif;
+}
+
+@layer base {
+  :root {
+    --lux-bg: #EAE2D7;
+    --lux-card: rgba(244, 239, 231, 0.92);
+    --lux-card-elevated: #F6F1EA;
+    --lux-card-subtle: #EDE5DA;
+    --lux-border: #D6C9B8;
+    --lux-ink: #171412;
+    --lux-muted: #574E45;
+    --lux-gold-text: #8A6B1C;
+  }
+
+  html {
+    background-color: #EAE2D7;
+    color: #171412;
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  html.text-scale-large {
+    font-size: 112.5%;
+  }
+
+  html.dark {
+    --lux-bg: #0E0C14;
+    --lux-card: rgba(23, 20, 34, 0.90);
+    --lux-card-elevated: #1D192B;
+    --lux-card-subtle: #151220;
+    --lux-border: rgba(212, 175, 55, 0.22);
+    --lux-ink: #F5EFE6;
+    --lux-muted: #B9AEBE;
+    --lux-gold-text: #E5C45A;
+
+    --color-surface: #0E0C14;
+    --color-surface-dim: #09080E;
+    --color-surface-bright: #241F35;
+    --color-surface-container-lowest: #12101A;
+    --color-surface-container-low: #171422;
+    --color-surface-container: #1C1829;
+    --color-surface-container-high: #231E33;
+    --color-surface-container-highest: #2C2640;
+    --color-on-surface: #F5EFE6;
+    --color-on-surface-variant: #B9AEBE;
+    --color-outline: #7D7188;
+    --color-outline-variant: #342D47;
+    --color-primary: #F5EFE6;
+    --color-primary-container: #D4AF37;
+    --color-on-primary: #0E0C14;
+    --color-on-primary-container: #0E0C14;
+    background-color: #0E0C14;
+    color: #F5EFE6;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    overscroll-behavior-y: none;
+    background: radial-gradient(circle at 18% 0%, #F3ECE2 0%, #EAE2D7 55%, #DFD5C7 100%);
+    color: var(--color-on-surface);
+    transition: background 0.3s ease, color 0.25s ease;
+  }
+
+  html.dark body {
+    background: radial-gradient(circle at 22% 0%, #1F1930 0%, #110E19 52%, #09070D 100%);
+  }
+}
+
+/* Royal Dark & Classy Cashmere Light Boutique Primitives */
+.luxury-card {
+  background-color: var(--lux-card);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid var(--lux-border);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(23, 20, 18, 0.08);
+  color: var(--lux-ink);
+}
+
+html.dark .luxury-card {
+  background-color: rgba(23, 20, 34, 0.90);
+  border-color: rgba(212, 175, 55, 0.20);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
+}
+
+.luxury-card-blush {
+  background: linear-gradient(145deg, rgba(236, 206, 212, 0.55) 0%, rgba(244, 239, 231, 0.94) 100%);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(183, 110, 121, 0.30);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(183, 110, 121, 0.09);
+  color: var(--lux-ink);
+}
+
+html.dark .luxury-card-blush {
+  background: linear-gradient(145deg, rgba(72, 31, 46, 0.52) 0%, rgba(24, 19, 34, 0.94) 100%);
+  border-color: rgba(196, 116, 130, 0.34);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.48);
+}
+
+.luxury-card-sage {
+  background: linear-gradient(145deg, rgba(214, 224, 214, 0.65) 0%, rgba(244, 239, 231, 0.94) 100%);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(98, 128, 106, 0.28);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+  color: var(--lux-ink);
+}
+
+html.dark .luxury-card-sage {
+  background: linear-gradient(145deg, rgba(29, 52, 43, 0.48) 0%, rgba(23, 20, 34, 0.94) 100%);
+  border-color: rgba(114, 168, 136, 0.28);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
+}
+
+.btn-luxury {
+  position: relative;
+  overflow: hidden;
+  min-height: 52px;
+  border-radius: 9999px;
+  background-color: #14111D;
+  color: #F6F1EA;
+  border: 1px solid rgba(212, 175, 55, 0.42);
+  box-shadow: 0 8px 24px rgba(10, 10, 10, 0.18);
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.28s ease,
+    border-color 0.28s ease,
+    background-color 0.28s ease;
+}
+
+html.dark .btn-luxury {
+  background: linear-gradient(135deg, #231C35 0%, #151122 100%);
+  color: #F8F3EC;
+  border-color: rgba(212, 175, 55, 0.55);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.45);
+}
+
+.btn-luxury:hover:not(:disabled) {
+  border-color: #D4AF37;
+  box-shadow: 0 10px 28px rgba(212, 175, 55, 0.26), 0 4px 14px rgba(10, 10, 10, 0.2);
+  background-image: linear-gradient(
+    112deg,
+    #14111D 0%,
+    #261F33 42%,
+    #4A3B19 50%,
+    #261F33 58%,
+    #14111D 100%
+  );
+}
+
+.btn-luxury:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.btn-luxury-outline {
+  min-height: 52px;
+  border-radius: 9999px;
+  background-color: var(--lux-card-elevated);
+  color: var(--lux-ink);
+  border: 1px solid var(--lux-border);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.btn-luxury-outline:hover:not(:disabled) {
+  border-color: #D4AF37;
+  box-shadow: 0 6px 22px rgba(212, 175, 55, 0.18);
+}
+
+.btn-luxury-outline:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.polaroid-card {
+  background-color: var(--lux-card-elevated);
+  border: 1px solid var(--lux-border);
+  border-radius: 24px;
+  padding: 14px 14px 20px 14px;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.09);
+  color: var(--lux-ink);
+}
+
+/* Harmonize legacy light-only hex utility classes automatically in Royal Dark & Cashmere Light */
+html:not(.dark) .bg-\[\#FFFCF8\],
+html:not(.dark) .bg-\[\#FFFCF8\]\/95,
+html:not(.dark) .bg-\[\#FFFCF8\]\/92,
+html:not(.dark) .bg-\[\#FFFCF8\]\/90,
+html:not(.dark) .bg-\[\#FFFCF8\]\/88,
+html:not(.dark) .bg-\[\#FFFCF8\]\/85 {
+  background-color: rgba(244, 239, 231, 0.93) !important;
+}
+
+html:not(.dark) .bg-\[\#FFF8F0\],
+html:not(.dark) .bg-\[\#FFF8F0\]\/90,
+html:not(.dark) .bg-\[\#FFF8F0\]\/80,
+html:not(.dark) .bg-\[\#FAF3EB\],
+html:not(.dark) .bg-\[\#FAF3EB\]\/80,
+html:not(.dark) .bg-\[\#FAF3EB\]\/75,
+html:not(.dark) .bg-\[\#FAF3EB\]\/70,
+html:not(.dark) .bg-\[\#FAF3EB\]\/65,
+html:not(.dark) .bg-\[\#FAF3EB\]\/60,
+html:not(.dark) .bg-\[\#FAF1E6\] {
+  background-color: rgba(235, 227, 215, 0.88) !important;
+}
+
+html.dark .text-\[\#0A0A0A\] {
+  color: #F5EFE6 !important;
+}
+
+html.dark .text-\[\#5C544E\],
+html.dark .text-\[\#8C7B6E\] {
+  color: #BDB2C4 !important;
+}
+
+html.dark .text-\[\#8C6D1F\] {
+  color: #E5C45A !important;
+}
+
+html.dark .bg-\[\#FFFCF8\],
+html.dark .bg-\[\#FFFCF8\]\/95,
+html.dark .bg-\[\#FFFCF8\]\/92,
+html.dark .bg-\[\#FFFCF8\]\/90,
+html.dark .bg-\[\#FFFCF8\]\/88,
+html.dark .bg-\[\#FFFCF8\]\/85 {
+  background-color: rgba(26, 22, 38, 0.92) !important;
+}
+
+html.dark .bg-\[\#FFF8F0\],
+html.dark .bg-\[\#FFF8F0\]\/90,
+html.dark .bg-\[\#FFF8F0\]\/80,
+html.dark .bg-\[\#FAF3EB\],
+html.dark .bg-\[\#FAF3EB\]\/80,
+html.dark .bg-\[\#FAF3EB\]\/75,
+html.dark .bg-\[\#FAF3EB\]\/70,
+html.dark .bg-\[\#FAF3EB\]\/65,
+html.dark .bg-\[\#FAF3EB\]\/60,
+html.dark .bg-\[\#FAF1E6\],
+html.dark .bg-\[\#F8EFE6\] {
+  background-color: rgba(34, 29, 49, 0.86) !important;
+}
+
+html.dark .border-\[\#F0E6DC\],
+html.dark .border-\[\#DFE7DF\],
+html.dark .border-\[\#F0DCE0\] {
+  border-color: rgba(212, 175, 55, 0.22) !important;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+  user-select: none;
+  line-height: 1;
+}
+
+.material-symbols-filled {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  @page {
+    margin: 14mm;
+    size: auto;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #111827 !important;
+    font-size: 11pt !important;
+    min-height: auto !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+}

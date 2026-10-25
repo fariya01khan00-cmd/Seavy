@@ -1,0 +1,22 @@
+{
+  "sosAlerts": [],
+  "contacts": [],
+  "evidence": [],
+  "liveLocations": [],
+  "profile": null,
+  "blePackets": [
+    {
+      "id": "ble-seed-1",
+      "senderName": "Riya Sharma (Saevy Peer)",
+      "senderGuardianId": "#SV-77412",
+      "signalType": "safe_reply",
+      "message": "Saevy Bluetooth Node Online nearby (~35m · Metro Gate 2). Ready to assist.",
+      "etaText": "~45 sec walk",
+      "distanceText": "35 m nearby",
+      "timestamp": "Active nearby",
+      "coords": null,
+      "via": "bluetooth_peer"
+    }
+  ],
+  "users": []
+}

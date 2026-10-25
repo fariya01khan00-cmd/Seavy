@@ -1,0 +1,12 @@
+{
+  "name": "Remix Saevy Sanctuary",
+  "description": "Mobile-first personal safety sanctuary featuring doctor wellness tips, homoeopathic and home remedies @home, popular doctor calling numbers, and 5 emergency helplines.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

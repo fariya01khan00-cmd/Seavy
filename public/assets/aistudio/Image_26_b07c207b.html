@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#0c1321;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-low": "#151b2a", "surface-bright": "#323949", "on-surface-variant": "#d5c3bc", "on-error": "#690005", "inverse-surface": "#dce2f6", "surface-variant": "#2e3544", "tertiary": "#e3d5ff", "primary-fixed-dim": "#f0bba7", "error-container": "#93000a", "inverse-on-surface": "#2a3040", "background": "#0c1321", "on-secondary": "#3d2f00", "on-secondary-fixed": "#241a00", "on-primary": "#49281a", "outline": "#9d8d88", "tertiary-container": "#c7b8e7", "on-primary-container": "#6a4535", "secondary-container": "#634d00", "on-surface": "#dce2f6", "on-background": "#dce2f6", "on-secondary-fixed-variant": "#584400", "surface-container-highest": "#2e3544", "secondary-fixed-dim": "#e2c46f", "outline-variant": "#51443f", "on-tertiary-fixed-variant": "#4c4068", "on-error-container": "#ffdad6", "primary-container": "#e8b4a0", "secondary-fixed": "#ffe08c", "error": "#ffb4ab", "surface-dim": "#0c1321", "tertiary-fixed-dim": "#cebfef", "primary-fixed": "#ffdbce", "surface-container": "#19202e", "surface-tint": "#f0bba7", "on-tertiary-container": "#53476f", "on-tertiary": "#352a50", "on-primary-fixed": "#301408", "inverse-primary": "#7d5545", "on-primary-fixed-variant": "#623e2f", "surface": "#0c1321", "on-secondary-container": "#dec06c", "surface-container-lowest": "#070e1c", "on-tertiary-fixed": "#20153a", "secondary": "#e2c46f", "surface-container-high": "#232a39", "tertiary-fixed": "#e9ddff", "primary": "#ffd2c1" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "margin-desktop": "3rem", "gutter-tablet": "1.5rem", "space-sm": "0.5rem", "gutter-desktop": "2rem", "space-xs": "0.25rem", "margin-tablet": "2rem", "gutter": "1rem", "margin": "1.25rem", "space-md": "1rem", "space-xl": "2rem", "space-lg": "1.5rem", "space-2xl": "3rem" }, "fontFamily": { "display-primary-mobile": ["Plus Jakarta Sans"], "title-card": ["Plus Jakarta Sans"], "headline-bilingual-primary": ["Plus Jakarta Sans"], "label-micro": ["Plus Jakarta Sans"], "headline-bilingual-secondary": ["Plus Jakarta Sans"], "label-prominent": ["Plus Jakarta Sans"], "body-muted": ["Plus Jakarta Sans"], "display-primary": ["Plus Jakarta Sans"], "body-default": ["Plus Jakarta Sans"] }, "fontSize": { "display-primary-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "800" }], "title-card": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-bilingual-primary": ["22px", { "lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "700" }], "label-micro": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "500" }], "headline-bilingual-secondary": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }], "label-prominent": ["13px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-muted": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "display-primary": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-default": ["15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-default text-body-default text-on-surface antialiased flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/80 backdrop-blur-2xl pt-safe shadow-[0_4px_30px_rgba(0,0,0,0.5)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><button aria-label="Go back" class="w-11 h-11 -ml-space-xs flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back_ios_new</span></button><div class="flex items-baseline gap-space-xs"><h1 class="font-headline-bilingual-primary text-headline-bilingual-primary text-on-surface tracking-tight leading-none">Wishlist</h1><span class="font-label-micro text-label-micro text-secondary bg-secondary/10 px-2 py-0.5 rounded-full">4 Saved</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Search or Clear" class="w-11 h-11 flex items-center justify-center rounded-full bg-surface-container-high/60 backdrop-blur-md text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">search</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full px-margin pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full pb-10">
+<!-- Floating Toast Notification -->
+<div class="fixed top-20 inset-x-4 z-50 pointer-events-none transition-all duration-300 transform -translate-y-8 opacity-0 flex justify-center" id="toast-notify">
+<div class="px-space-md py-space-sm rounded-full bg-surface-container-highest/95 backdrop-blur-xl shadow-xl flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]" id="toast-icon">shopping_bag</span>
+<span class="font-label-prominent text-label-prominent text-on-surface" id="toast-message">Item added to your bag</span>
+</div>
+</div>
+<!-- Telemetry Header & Trust Shield -->
+<section class="flex flex-col gap-space-sm pt-space-xs pb-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-micro text-label-micro text-secondary tracking-widest uppercase">Escrow Vault Guarded</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high/60 backdrop-blur-md">
+<span class="material-symbols-outlined text-primary text-[14px]">lock</span>
+<span class="font-label-micro text-label-micro text-primary-fixed-dim tracking-wide uppercase">Encrypted Telemetry</span>
+</div>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-bilingual-primary text-headline-bilingual-primary text-on-surface tracking-tight">Atelier Safety Suite</h2>
+<p class="font-body-muted text-body-muted text-on-surface-variant">Your personally archived security hardware & silent distress wearables.</p>
+</div>
+<!-- Filter Pills Strip -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar pt-space-xs">
+<button class="filter-chip active flex-shrink-0 px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-prominent text-label-prominent shadow-sm transition-all">
+        All Saved (<span id="total-count-pill">4</span>)
+      </button>
+<button class="filter-chip flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-high/70 text-on-surface-variant hover:text-on-surface font-label-prominent text-label-prominent backdrop-blur-md transition-all">
+        Wearables (2)
+      </button>
+<button class="filter-chip flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-high/70 text-on-surface-variant hover:text-on-surface font-label-prominent text-label-prominent backdrop-blur-md transition-all">
+        Acoustics & Strobe (1)
+      </button>
+<button class="filter-chip flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-high/70 text-secondary font-label-prominent text-label-prominent backdrop-blur-md flex items-center gap-1 transition-all">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Low Stock (1)
+      </button>
+</div>
+</section>
+<!-- Wishlist Cards Stack -->
+<section class="flex flex-col gap-space-md" id="cards-container">
+<!-- Card 1: Aura Smart Gem Ring -->
+<article class="wishlist-item group relative overflow-hidden rounded-lg bg-surface-container/70 backdrop-blur-xl shadow-lg transition-all duration-300" id="item-ring">
+<div class="p-space-md flex flex-col gap-space-sm">
+<!-- Top Row: Badge & Heart Trigger -->
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest font-label-micro text-label-micro text-secondary uppercase tracking-wider flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Active Ward
+          </span>
+<button aria-label="Remove item" class="w-9 h-9 rounded-full bg-surface-container-highest/60 flex items-center justify-center text-primary hover:scale-110 active:scale-95 transition-transform" onclick="toggleWishlist('item-ring', 'Aura Smart Gem Ring', 2499, 3999)">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<!-- Product Image & Core Specs Split -->
+<div class="flex gap-space-md items-center">
+<div class="relative w-24 h-24 rounded-DEFAULT bg-surface-container-lowest overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="A macro studio photograph of a luxury rose gold smart ring featuring an obsidian black smart gemstone facet. The jewelry rests on midnight velvet with subtle ambient rose-gold reflective edge lighting and cosmic indigo sparkles." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvXZ6EmDxNdEFpjN3H6WZH6iSaQIHbzAPbExtjMw6hwzqSK9oYyYxM9DUcaWj2NCjUc1ZvMsPaj1X9xmruohrXeeM6lKW896V4w0ZijFq-CLhnLcWnGiy0YRak1aaqlu2UqgVeNRo1r19Wro_qDEgbLpJ3m3oMyyOcuruTy55qz0ihy76SU319p4LX2-tEyGKX7BqEgI_J9SLXXky1Yb0x8orqWoWEyIEdUqz8Mb7gr5P8d1cO70E"/>
+<div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm font-label-micro text-[9px] text-primary">BLE 5.3</div>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-micro text-label-micro text-on-surface-variant uppercase tracking-wider">Obsidian & Rose Alloy</span>
+<h3 class="font-title-card text-title-card text-on-surface truncate">Aura Smart Gem Ring</h3>
+<p class="font-body-muted text-body-muted text-on-surface-variant line-clamp-1 mt-0.5">
+              Dual-Tap SOS • Haptic Guard • 7-Day Battery
+            </p>
+<div class="flex items-baseline gap-space-xs mt-1.5">
+<span class="font-headline-bilingual-primary text-headline-bilingual-primary text-primary tracking-tight">₹2,499</span>
+<span class="font-body-muted text-body-muted text-outline line-through">₹3,999</span>
+<span class="font-label-micro text-label-micro text-secondary font-semibold ml-1">37% OFF</span>
+</div>
+</div>
+</div>
+<!-- Dispatch & Security Telemetry -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">local_shipping</span>
+<span class="font-label-micro text-label-micro text-on-surface-variant">Ships Tomorrow • Discreet Packaging</span>
+</div>
+<button aria-label="Share via safe link" class="text-on-surface-variant hover:text-on-surface p-1 rounded-full flex items-center gap-1" onclick="shareDiscreetly('Aura Smart Gem Ring')">
+<span class="material-symbols-outlined text-[16px]">ios_share</span>
+<span class="font-label-micro text-label-micro">Safe Link</span>
+</button>
+</div>
+<!-- Action Row -->
+<div class="pt-space-xs">
+<button class="w-full h-12 rounded-full bg-primary text-on-primary font-label-prominent text-label-prominent flex items-center justify-center gap-space-xs hover:bg-primary-container active:scale-[0.98] transition-all shadow-md" onclick="moveToBag('item-ring', 'Aura Smart Gem Ring', 2499, 3999)">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+<span>Move to Bag • ₹2,499</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 2: SirenShield 130dB Sonic Alarm -->
+<article class="wishlist-item group relative overflow-hidden rounded-lg bg-surface-container/70 backdrop-blur-xl shadow-lg transition-all duration-300" id="item-siren">
+<div class="p-space-md flex flex-col gap-space-sm">
+<!-- Top Row: Low Stock Highlight & Heart -->
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-error-container/60 font-label-micro text-label-micro text-error uppercase tracking-wider flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span> Only 3 Left • High Demand
+          </span>
+<button aria-label="Remove item" class="w-9 h-9 rounded-full bg-surface-container-highest/60 flex items-center justify-center text-primary hover:scale-110 active:scale-95 transition-transform" onclick="toggleWishlist('item-siren', 'SirenShield 130dB Alarm', 899, 1499)">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<!-- Product Image & Specs -->
+<div class="flex gap-space-md items-center">
+<div class="relative w-24 h-24 rounded-DEFAULT bg-surface-container-lowest overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Compact champagne gold and midnight blue acoustic personal security alarm pod with high polished chamfered aluminum edges. A delicate woven nylon lanyard with luxury gold accents rests beside it under warm spotlighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsailV6cTc8kqF9Je1kr65VwSFfkRfQcLQnkg9ohlEAAOfYxnfAF-sA7Nn3tgsTAAycwCzOLHENPUQDWxlJWJCktLwblZYaT7CGGiXoq70mst0Z8noB4ydiT0OiSz1svakfyXrHZ1X0LKUtis6m_4xSk6PeswpNtcqxjGK8OgrKaS3pSVENFH8_mZWTbD7MJQbdzH0r6gAJer5K3miqkcrLWGdwgVkO_nyjuZlwwz0g9E891UogeU"/>
+<div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm font-label-micro text-[9px] text-secondary">130 dB</div>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-micro text-label-micro text-on-surface-variant uppercase tracking-wider">Champagne Gold Key-Fob</span>
+<h3 class="font-title-card text-title-card text-on-surface truncate">SirenShield 130dB Alarm</h3>
+<p class="font-body-muted text-body-muted text-on-surface-variant line-clamp-1 mt-0.5">
+              Dual-Frequency Scream • Strobe LED Blind • Carabiner
+            </p>
+<div class="flex items-baseline gap-space-xs mt-1.5">
+<span class="font-headline-bilingual-primary text-headline-bilingual-primary text-primary tracking-tight">₹899</span>
+<span class="font-body-muted text-body-muted text-outline line-through">₹1,499</span>
+<span class="font-label-micro text-label-micro text-secondary font-semibold ml-1">40% OFF</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span class="font-label-micro text-label-micro text-on-surface-variant">Police-Grade Frequency Tested</span>
+</div>
+<button aria-label="Share via safe link" class="text-on-surface-variant hover:text-on-surface p-1 rounded-full flex items-center gap-1" onclick="shareDiscreetly('SirenShield 130dB Alarm')">
+<span class="material-symbols-outlined text-[16px]">ios_share</span>
+<span class="font-label-micro text-label-micro">Safe Link</span>
+</button>
+</div>
+<!-- Action Row -->
+<div class="pt-space-xs">
+<button class="w-full h-12 rounded-full bg-primary text-on-primary font-label-prominent text-label-prominent flex items-center justify-center gap-space-xs hover:bg-primary-container active:scale-[0.98] transition-all shadow-md" onclick="moveToBag('item-siren', 'SirenShield 130dB Alarm', 899, 1499)">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+<span>Move to Bag • ₹899</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 3: GuardianTag Stealth GPS Tracker -->
+<article class="wishlist-item group relative overflow-hidden rounded-lg bg-surface-container/70 backdrop-blur-xl shadow-lg transition-all duration-300" id="item-tag">
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest font-label-micro text-label-micro text-tertiary uppercase tracking-wider flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Encrypted Relay
+          </span>
+<button aria-label="Remove item" class="w-9 h-9 rounded-full bg-surface-container-highest/60 flex items-center justify-center text-primary hover:scale-110 active:scale-95 transition-transform" onclick="toggleWishlist('item-tag', 'GuardianTag Stealth GPS', 1799, 2899)">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<!-- Product Image & Specs -->
+<div class="flex gap-space-md items-center">
+<div class="relative w-24 h-24 rounded-DEFAULT bg-surface-container-lowest overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="An ultra-slim circular matte black titanium GPS tracker disc with fine rose-gold beveled trim, resting on dark brushed carbon fiber texture with subtle cyan and gold ambient cyber glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvwcerVsnRtiERljJLZhj_B3LTELYBL63VnplhKvaL7r2HMDz28TdpuHJ3jQdDKV9Jq-PusKMvEjk9RPgdHjj1uYNO4Ylj-BYpQRAGyIc1ajfbmct5ENxSstVdop5HTDTjIG7FsDuGEjT2_cYbOxJU6_7IqNnlrRRWXiGydDsrCPTIMG4vvhLXZQ69pkWFJcXALEw-_kkcJPzI5iEfTax_Mp1tIbHV7aOp4Zj4VkHxbmk7Tn6CNbI"/>
+<div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm font-label-micro text-[9px] text-primary">30-Day Bat</div>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-micro text-label-micro text-on-surface-variant uppercase tracking-wider">Matte Titanium Disc</span>
+<h3 class="font-title-card text-title-card text-on-surface truncate">GuardianTag Stealth GPS</h3>
+<p class="font-body-muted text-body-muted text-on-surface-variant line-clamp-1 mt-0.5">
+              30-Day Cell • Magnetic Mount • Zero-Log Mesh
+            </p>
+<div class="flex items-baseline gap-space-xs mt-1.5">
+<span class="font-headline-bilingual-primary text-headline-bilingual-primary text-primary tracking-tight">₹1,799</span>
+<span class="font-body-muted text-body-muted text-outline line-through">₹2,899</span>
+<span class="font-label-micro text-label-micro text-secondary font-semibold ml-1">38% OFF</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">bolt</span>
+<span class="font-label-micro text-label-micro text-on-surface-variant">Instant Pair with Guardian Network</span>
+</div>
+<button aria-label="Share via safe link" class="text-on-surface-variant hover:text-on-surface p-1 rounded-full flex items-center gap-1" onclick="shareDiscreetly('GuardianTag Stealth GPS')">
+<span class="material-symbols-outlined text-[16px]">ios_share</span>
+<span class="font-label-micro text-label-micro">Safe Link</span>
+</button>
+</div>
+<!-- Action Row -->
+<div class="pt-space-xs">
+<button class="w-full h-12 rounded-full bg-primary text-on-primary font-label-prominent text-label-prominent flex items-center justify-center gap-space-xs hover:bg-primary-container active:scale-[0.98] transition-all shadow-md" onclick="moveToBag('item-tag', 'GuardianTag Stealth GPS', 1799, 2899)">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+<span>Move to Bag • ₹1,799</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 4: StrobeKey Multi-tool Keychain -->
+<article class="wishlist-item group relative overflow-hidden rounded-lg bg-surface-container/70 backdrop-blur-xl shadow-lg transition-all duration-300" id="item-strobe">
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-highest font-label-micro text-label-micro text-secondary uppercase tracking-wider flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Aviation Alloy
+          </span>
+<button aria-label="Remove item" class="w-9 h-9 rounded-full bg-surface-container-highest/60 flex items-center justify-center text-primary hover:scale-110 active:scale-95 transition-transform" onclick="toggleWishlist('item-strobe', 'StrobeKey Multi-tool', 649, 999)">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<!-- Product Image & Specs -->
+<div class="flex gap-space-md items-center">
+<div class="relative w-24 h-24 rounded-DEFAULT bg-surface-container-lowest overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="A refined dark anodized titanium pocket EDC multi-tool with integrated ceramic glass breaker tip and micro tactical flashlight, displayed beside a sleek rose-gold key fob on luxury dark marble." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmH1T54hjPjSa57z6nbkxVsEX2xmpdNgDCSB5WnpUDhx9lFezEQsvYJZgFtcLyWX1DRsComaJ9QWJ_GnVa27L-9noUfPnk1J80kESGDZCgwSeWaBW3GZXp2aETPu86-gTaohkcBOKP6tMXTycSzN7XAUL9cwMl_lkw66XpvZFbIOu-SMCvKU2tmjH3lRLpvvqaaD1eX4DMqFTgf7P4w5LfjiN-VN8l4sYbahPQZ11gWXDVn28HUc0"/>
+<div class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm font-label-micro text-[9px] text-primary">800 Lumen</div>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-micro text-label-micro text-on-surface-variant uppercase tracking-wider">Aviation EDC Armor</span>
+<h3 class="font-title-card text-title-card text-on-surface truncate">StrobeKey Multi-tool</h3>
+<p class="font-body-muted text-body-muted text-on-surface-variant line-clamp-1 mt-0.5">
+              Window Punch • Strobe Lamp • Spray Cradle
+            </p>
+<div class="flex items-baseline gap-space-xs mt-1.5">
+<span class="font-headline-bilingual-primary text-headline-bilingual-primary text-primary tracking-tight">₹649</span>
+<span class="font-body-muted text-body-muted text-outline line-through">₹999</span>
+<span class="font-label-micro text-label-micro text-secondary font-semibold ml-1">35% OFF</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">security</span>
+<span class="font-label-micro text-label-micro text-on-surface-variant">TSA Compliant Discretion Spec</span>
+</div>
+<button aria-label="Share via safe link" class="text-on-surface-variant hover:text-on-surface p-1 rounded-full flex items-center gap-1" onclick="shareDiscreetly('StrobeKey Multi-tool')">
+<span class="material-symbols-outlined text-[16px]">ios_share</span>
+<span class="font-label-micro text-label-micro">Safe Link</span>
+</button>
+</div>
+<!-- Action Row -->
+<div class="pt-space-xs">
+<button class="w-full h-12 rounded-full bg-primary text-on-primary font-label-prominent text-label-prominent flex items-center justify-center gap-space-xs hover:bg-primary-container active:scale-[0.98] transition-all shadow-md" onclick="moveToBag('item-strobe', 'StrobeKey Multi-tool', 649, 999)">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+<span>Move to Bag • ₹649</span>
+</button>
+</div>
+</div>
+</article>
+</section>
+<!-- Empty State View (Hidden by default) -->
+<section class="hidden flex-col items-center justify-center text-center py-12 px-space-md" id="empty-state">
+<div class="w-20 h-20 rounded-full bg-surface-container-high/60 backdrop-blur-md flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-primary text-[36px]">chevron_left</span>
+</div>
+<h3 class="font-headline-bilingual-primary text-headline-bilingual-primary text-on-surface">Your Vault is Empty</h3>
+<p class="font-body-muted text-body-muted text-on-surface-variant max-w-xs mt-space-xs mb-space-lg">
+      No safety hardware saved yet. Explore the Saevy Atelier for discreet personal defense accessories and smart jewelry.
+    </p>
+<button class="px-space-xl h-12 rounded-full bg-primary text-on-primary font-label-prominent text-label-prominent flex items-center gap-space-xs shadow-lg hover:bg-primary-container transition-all" onclick="browseCatalog()">
+<span class="material-symbols-outlined text-[20px]">explore</span>
+<span>Browse Curated Atelier</span>
+</button>
+</section>
+<!-- Summary Drawer Section -->
+<section class="mt-space-lg p-space-lg rounded-lg bg-surface-container-low/90 backdrop-blur-2xl shadow-xl flex flex-col gap-space-md" id="summary-drawer">
+<!-- Value Breakout -->
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex flex-col">
+<span class="font-label-micro text-label-micro text-on-surface-variant uppercase tracking-wider">Total Saved Portfolio</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-primary-mobile text-display-primary-mobile text-on-surface tracking-tight leading-none" id="total-val">₹5,846</span>
+<span class="font-label-prominent text-label-prominent text-secondary font-semibold" id="saved-val">Save ₹3,550</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-micro text-label-micro text-primary-fixed-dim bg-primary/10 px-2 py-0.5 rounded-full">Concierge Tier</span>
+<span class="font-label-micro text-label-micro text-on-surface-variant mt-1">Free Insured Express</span>
+</div>
+</div>
+<!-- Master Action Button -->
+<button class="w-full h-14 rounded-full bg-gradient-to-r from-primary to-primary-container text-on-primary font-title-card text-title-card flex items-center justify-center gap-space-xs shadow-xl active:scale-[0.98] transition-all" id="move-all-btn" onclick="moveAllToBag()">
+<span>Move All (<span id="btn-count">4</span> Items) to Bag</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<!-- Trust Assurances Footer -->
+<div class="grid grid-cols-3 gap-space-xs pt-space-xs text-center">
+<div class="flex flex-col items-center gap-1 p-2 rounded-DEFAULT bg-surface-container-lowest/40">
+<span class="material-symbols-outlined text-secondary text-[18px]">inventory_2</span>
+<span class="font-label-micro text-[10px] text-on-surface-variant leading-tight">Discreet Packaging</span>
+</div>
+<div class="flex flex-col items-center gap-1 p-2 rounded-DEFAULT bg-surface-container-lowest/40">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span>
+<span class="font-label-micro text-[10px] text-on-surface-variant leading-tight">1-Year Hardware</span>
+</div>
+<div class="flex flex-col items-center gap-1 p-2 rounded-DEFAULT bg-surface-container-lowest/40">
+<span class="material-symbols-outlined text-secondary text-[18px]">lock_reset</span>
+<span class="font-label-micro text-[10px] text-on-surface-variant leading-tight">Escrow Protected</span>
+</div>
+</div>
+</section>
+</div>
+<script>
+  let wishlistItems = {
+    'item-ring': { title: 'Aura Smart Gem Ring', price: 2499, original: 3999 },
+    'item-siren': { title: 'SirenShield 130dB Alarm', price: 899, original: 1499 },
+    'item-tag': { title: 'GuardianTag Stealth GPS', price: 1799, original: 2899 },
+    'item-strobe': { title: 'StrobeKey Multi-tool', price: 649, original: 999 }
+  };
+
+  function showToast(msg, icon = 'shopping_bag') {
+    const toast = document.getElementById('toast-notify');
+    const msgEl = document.getElementById('toast-message');
+    const iconEl = document.getElementById('toast-icon');
+    if (!toast || !msgEl || !iconEl) return;
+
+    msgEl.textContent = msg;
+    iconEl.textContent = icon;
+    toast.classList.remove('opacity-0', '-translate-y-8');
+    toast.classList.add('opacity-100', 'translate-y-0');
+
+    setTimeout(() => {
+      toast.classList.remove('opacity-100', 'translate-y-0');
+      toast.classList.add('opacity-0', '-translate-y-8');
+    }, 2400);
+  }
+
+  function updateRecalculations() {
+    const keys = Object.keys(wishlistItems);
+    const count = keys.length;
+    
+    // Update pills and labels
+    const pill = document.getElementById('total-count-pill');
+    const btnCount = document.getElementById('btn-count');
+    if (pill) pill.textContent = count;
+    if (btnCount) btnCount.textContent = count;
+
+    // Calculate totals
+    let currentTotal = 0;
+    let originalTotal = 0;
+    keys.forEach(k => {
+      currentTotal += wishlistItems[k].price;
+      originalTotal += wishlistItems[k].original;
+    });
+
+    const totalValEl = document.getElementById('total-val');
+    const savedValEl = document.getElementById('saved-val');
+    if (totalValEl) totalValEl.innerHTML = `₹${currentTotal.toLocaleString('en-IN')}`;
+    if (savedValEl) savedValEl.textContent = `Save ₹${(originalTotal - currentTotal).toLocaleString('en-IN')}`;
+
+    // Manage Empty State
+    const container = document.getElementById('cards-container');
+    const emptyState = document.getElementById('empty-state');
+    const summaryDrawer = document.getElementById('summary-drawer');
+
+    if (count === 0) {
+      if (container) container.classList.add('hidden');
+      if (summaryDrawer) summaryDrawer.classList.add('hidden');
+      if (emptyState) {
+        emptyState.classList.remove('hidden');
+        emptyState.classList.add('flex');
+      }
+    } else {
+      if (container) container.classList.remove('hidden');
+      if (summaryDrawer) summaryDrawer.classList.remove('hidden');
+      if (emptyState) {
+        emptyState.classList.add('hidden');
+        emptyState.classList.remove('flex');
+      }
+    }
+  }
+
+  function toggleWishlist(id, name, price, original) {
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    el.style.transform = 'scale(0.92)';
+    el.style.opacity = '0';
+    setTimeout(() => {
+      el.remove();
+      delete wishlistItems[id];
+      updateRecalculations();
+      showToast(`${name} removed from Wishlist`, 'favorite_border');
+    }, 280);
+  }
+
+  function moveToBag(id, name, price, original) {
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    el.style.transform = 'translateX(24px)';
+    el.style.opacity = '0';
+    setTimeout(() => {
+      el.remove();
+      delete wishlistItems[id];
+      updateRecalculations();
+      showToast(`${name} transferred to Bag`, 'check_circle');
+    }, 250);
+  }
+
+  function moveAllToBag() {
+    const count = Object.keys(wishlistItems).length;
+    if (count === 0) return;
+
+    const cards = document.querySelectorAll('.wishlist-item');
+    cards.forEach((card, idx) => {
+      setTimeout(() => {
+        card.style.transform = 'scale(0.95)';
+        card.style.opacity = '0';
+      }, idx * 60);
+    });
+
+    setTimeout(() => {
+      wishlistItems = {};
+      cards.forEach(c => c.remove());
+      updateRecalculations();
+      showToast(`All ${count} hardware units moved to Bag`, 'check_circle');
+    }, cards.length * 60 + 200);
+  }
+
+  function shareDiscreetly(name) {
+    showToast(`Discreet private link copied to clipboard`, 'link');
+  }
+
+  function browseCatalog() {
+    showToast('Redirecting to Saevy Atelier Catalog...', 'explore');
+  }
+</script></main></body></html>

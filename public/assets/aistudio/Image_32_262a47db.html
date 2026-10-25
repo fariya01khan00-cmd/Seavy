@@ -1,0 +1,217 @@
+<!DOCTYPE html><html class="dark" lang="en" style="width: 390px; height: 1128px; overflow: hidden; position: relative;"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_stack" name="shell-type"><title>Saevy</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-error-container": "#ffdad6", "primary": "#ffd2c1", "on-tertiary-container": "#9f002c", "on-background": "#dce2f6", "on-tertiary": "#68001a", "surface": "#0c1321", "tertiary": "#ffd0d1", "tertiary-fixed": "#ffdada", "surface-container-lowest": "#070e1c", "secondary-fixed": "#ffe08c", "on-tertiary-fixed-variant": "#920028", "secondary-fixed-dim": "#e2c46f", "on-primary": "#49281a", "tertiary-container": "#ffa8ac", "error": "#ffb4ab", "on-surface": "#dce2f6", "on-secondary-container": "#dec06c", "inverse-on-surface": "#2a3040", "surface-container-highest": "#2e3544", "error-container": "#93000a", "primary-fixed-dim": "#f0bba7", "on-tertiary-fixed": "#40000c", "secondary-container": "#634d00", "primary-container": "#e8b4a0", "surface-container-high": "#232a39", "surface-dim": "#0c1321", "on-secondary-fixed-variant": "#584400", "surface-tint": "#f0bba7", "primary-fixed": "#ffdbce", "on-primary-fixed": "#301408", "background": "#0c1321", "outline-variant": "#51443f", "on-primary-fixed-variant": "#623e2f", "outline": "#9d8d88", "inverse-surface": "#dce2f6", "surface-container": "#19202e", "on-error": "#690005", "inverse-primary": "#7d5545", "secondary": "#e2c46f", "surface-bright": "#323949", "on-secondary-fixed": "#241a00", "on-surface-variant": "#d5c3bc", "on-secondary": "#3d2f00", "tertiary-fixed-dim": "#ffb3b6", "surface-variant": "#2e3544", "on-primary-container": "#6a4535", "surface-container-low": "#151b2a" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-desktop": "4rem", "space-xs": "0.375rem", "margin": "1.25rem", "space-lg": "2rem", "space-md": "1.25rem", "margin-tablet": "2.5rem", "gutter-desktop": "2rem", "gutter-tablet": "1.5rem", "space-sm": "0.75rem", "gutter": "1.25rem", "space-xl": "3rem" }, fontFamily: { "body-md": ["Outfit"], "label-md": ["Space Grotesk"], "label-sm": ["Space Grotesk"], "display-lg-mobile": ["Outfit"], "label-lg": ["Space Grotesk"], "headline-md": ["Outfit"], "display-lg": ["Outfit"], "headline-lg": ["Outfit"], "title-md": ["Outfit"], "headline-sm": ["Outfit"], "body-lg": ["Outfit"] }, fontSize: { "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400" }], "label-md": ["11px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "600" }], "display-lg-mobile": ["34px", { "lineHeight": "42px", "letterSpacing": "-0.015em", "fontWeight": "300" }], "label-lg": ["13px", { "lineHeight": "18px", "letterSpacing": "0.08em", "fontWeight": "500" }], "headline-md": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "display-lg": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "300" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "title-md": ["17px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "500" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0.01em", "fontWeight": "300" }] } } } }</script><style>@layer base { html, body { min-height: 100%; margin: 0; padding: 0; background-color: #0c1321; } body { overscroll-behavior-y: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:text-primary active:scale-95 transition-transform" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="modify_the_3d_metallic_logo_emblem_based_on_reference_image_data_image_image_3.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W6ANcpnV0oWwRfrkb7benlgVOUjia6N2gyAwmheKGkCE8lps_e9AiCxwkkpNRCQgZNkTlF5tI--Kj4NML9Q7dkpVCJl4e1h5OIgzg_C3Rgg6oQ2EOOs2CWWsVxNeSt3v2SkMjfnh_KaPxS8_-w8I1tWyW2wUXsjVjZnfY4tg-ziE50EgylXer4KfCNgTI9-kigBJERiRExZirJA2UOmzlnQgkWNN3LPJMNBADL12sZbNi5IBt6-9MEqpOHv2iB-mYj2EYMD-I"><h1 class="font-title-md text-title-md text-on-surface ml-1">Payment Successful</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Customer Support" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary active:scale-95 transition-transform"><span class="material-symbols-outlined text-[22px]">support_agent</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full pt-16 pb-safe bg-surface px-margin relative"><div class="flex flex-col w-full pb-10 relative overflow-hidden">
+<!-- Subtle Ambient Glow Orbs -->
+<div class="absolute -top-12 left-1/2 -translate-x-1/2 w-80 h-80 rounded-full bg-primary/10 blur-[90px] pointer-events-none"></div>
+<div class="absolute top-48 right-[-20%] w-64 h-64 rounded-full bg-secondary/10 blur-[80px] pointer-events-none"></div>
+<!-- Hero: Celebration & Badge -->
+<section class="relative w-full pt-4 pb-6 flex flex-col items-center text-center">
+<!-- Particle Canvas for Dignified Shimmer -->
+<canvas class="absolute inset-0 w-full h-full pointer-events-none z-0" id="lux-particles" width="350" height="282"></canvas>
+<!-- Success Badge -->
+<div class="relative z-10 flex items-center justify-center my-4">
+<div class="absolute w-24 h-24 rounded-full bg-secondary/20 animate-ping opacity-60"></div>
+<div class="absolute w-28 h-28 rounded-full bg-primary/10 blur-md"></div>
+<div class="w-20 h-20 rounded-full bg-gradient-to-tr from-secondary-container via-surface-container-high to-surface-container-highest shadow-xl shadow-secondary/15 flex items-center justify-center relative">
+<div class="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-surface-container-lowest text-[34px] font-semibold transition-transform transform hover:scale-110" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+</div>
+</div>
+<!-- Status & Titles -->
+<div class="relative z-10 px-gutter mt-1 flex flex-col items-center">
+<div class="inline-flex items-center gap-space-xs bg-surface-container-high/70 backdrop-blur-md px-3 py-1 rounded-full mb-3 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-[#34D399] animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Transaction Confirmed</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-light tracking-tight">Payment Successful</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs mt-2 font-light">
+        Your order has been placed securely and encrypted in your personal vault.
+      </p>
+</div>
+</section>
+<!-- Live Status Micro-Tracker -->
+<section class="w-full mb-5">
+<div class="w-full bg-surface-container-low/80 backdrop-blur-xl p-space-sm rounded-xl shadow-md flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[19px]">inventory_2</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">Live Dispatch Status</span>
+<span class="font-title-md text-[13px] leading-tight text-on-surface truncate">Packing at Safe Depot • Whitefield</span>
+</div>
+</div>
+<span class="shrink-0 px-2.5 py-1 rounded-full bg-surface-container-highest text-[#34D399] font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#34D399] animate-ping"></span>
+        Active
+      </span>
+</div>
+</section>
+<!-- Transaction & Delivery Details Card -->
+<section class="w-full bg-surface-container/60 backdrop-blur-2xl rounded-2xl p-space-md shadow-2xl mb-5 relative">
+<div class="flex items-center justify-between pb-space-sm mb- space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Order Reference</span>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-title-md text-title-md text-primary font-medium tracking-wide">#SV-849201</span>
+<button aria-label="Copy Order ID" class="w-6 h-6 rounded-full bg-surface-container-high hover:bg-surface-container-highest flex items-center justify-center text-on-surface-variant active:scale-90 transition-transform" id="copy-btn" onclick="copyOrderId()">
+<span class="material-symbols-outlined text-[14px]" id="copy-icon">content_copy</span>
+</button>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Paid</span>
+<div class="font-headline-sm text-headline-sm text-secondary font-medium tracking-tight leading-snug">₹2,998</div>
+<span class="font-label-sm text-[9px] text-on-surface-variant/70 leading-none block">Incl. all taxes</span>
+</div>
+</div>
+<!-- Info Matrix -->
+<div class="grid grid-cols-1 gap-space-sm pt-space-xs">
+<!-- Payment Method -->
+<div class="flex items-start gap-space-sm p-2.5 rounded-xl bg-surface-container-lowest/50">
+<div class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-primary-container">
+<span class="material-symbols-outlined text-[16px]">account_balance_wallet</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Payment Method</span>
+<span class="font-body-md text-body-md text-on-surface font-normal truncate">Google Pay UPI</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant tracking-wider">Ref: #UPI-982410 • Verified</span>
+</div>
+</div>
+<!-- Estimated Arrival -->
+<div class="flex items-start gap-space-sm p-2.5 rounded-xl bg-surface-container-lowest/50">
+<div class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Delivery Window</span>
+<span class="font-body-md text-body-md text-on-surface font-normal">3–5 Business Days</span>
+<span class="font-label-sm text-[10px] text-secondary-fixed-dim">Expected by Friday, Oct 27</span>
+</div>
+</div>
+<!-- Destination -->
+<div class="flex items-start gap-space-sm p-2.5 rounded-xl bg-surface-container-lowest/50">
+<div class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[16px]">home_pin</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Delivering To</span>
+<span class="font-body-md text-body-md text-on-surface font-normal">Sarah Jenkins</span>
+<span class="font-body-md text-[12px] text-on-surface-variant leading-snug">Flat 402, Royal Palms, Koramangala, Bengaluru</span>
+</div>
+</div>
+</div>
+<!-- Assurance Badges Grid -->
+<div class="grid grid-cols-2 gap-2 mt-3 pt-3">
+<div class="bg-surface-container-high/40 rounded-xl p-2.5 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] font-semibold text-on-surface">Discreet Box</span>
+<span class="font-label-sm text-[9px] text-on-surface-variant">Tamper-sealed</span>
+</div>
+</div>
+<div class="bg-surface-container-high/40 rounded-xl p-2.5 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">published_with_changes</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] font-semibold text-on-surface">1-Yr Warranty</span>
+<span class="font-label-sm text-[9px] text-on-surface-variant">7-day replacement</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Vault Synced Pill / Guarantee -->
+<div class="w-full bg-surface-container-lowest/60 backdrop-blur-md rounded-xl p-3 mb-6 flex items-center gap-space-sm shadow-inner">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">shield_lock</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Order receipt and digital hardware warranty securely synced to your <span class="text-primary font-medium">Saevy Sovereign Vault</span>.</p>
+</div>
+<!-- Primary & Secondary Interactive Action CTAs -->
+<div class="w-full flex flex-col gap-space-sm mt-auto">
+<!-- Primary CTA: Track Order -->
+<button class="w-full h-14 rounded-full bg-primary-container text-on-primary-container font-headline-sm text-[15px] font-medium tracking-wide flex items-center justify-center gap-2 shadow-lg shadow-primary-container/20 hover:brightness-105 active:scale-[0.98] transition-all" type="button">
+<span class="">Track Live Order</span>
+<span class="material-symbols-outlined text-[19px]">arrow_forward</span>
+</button>
+<!-- Secondary CTA: Return to Store -->
+<button class="w-full h-12 rounded-full bg-surface-container-high/60 backdrop-blur-lg text-secondary font-title-md text-[14px] font-medium tracking-wide flex items-center justify-center gap-2 hover:bg-surface-container-highest active:scale-[0.98] transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span class="">Continue Shopping</span>
+</button>
+</div>
+</div>
+<script>
+  // Micro-interaction: Elegant Particle Ambient Shimmer
+  (function initShimmer() {
+    const canvas = document.getElementById('lux-particles');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    let width, height;
+    const particles = [];
+    const colors = ['#E8B4A0', '#E7C873', '#FFD2C1', '#F0BBA7'];
+
+    function resize() {
+      width = canvas.width = canvas.parentElement.offsetWidth || window.innerWidth;
+      height = canvas.height = canvas.parentElement.offsetHeight || 220;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    for (let i = 0; i < 28; i++) {
+      particles.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        r: Math.random() * 2 + 0.8,
+        speedX: (Math.random() - 0.5) * 0.4,
+        speedY: -Math.random() * 0.5 - 0.2,
+        alpha: Math.random() * 0.7 + 0.2,
+        color: colors[Math.floor(Math.random() * colors.length)]
+      });
+    }
+
+    function render() {
+      ctx.clearRect(0, 0, width, height);
+      for (let p of particles) {
+        ctx.save();
+        ctx.globalAlpha = p.alpha;
+        ctx.fillStyle = p.color;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
+
+        p.x += p.speedX;
+        p.y += p.speedY;
+        if (p.y < 0) {
+          p.y = height + 5;
+          p.x = Math.random() * width;
+        }
+      }
+      requestAnimationFrame(render);
+    }
+    render();
+  })();
+
+  // Micro-interaction: Copy Order ID with visual feedback
+  function copyOrderId() {
+    const text = "#SV-849201";
+    navigator.clipboard.writeText(text).then(() => {
+      const icon = document.getElementById('copy-icon');
+      if (icon) {
+        icon.innerText = 'done';
+        icon.classList.add('text-[#34D399]');
+        setTimeout(() => {
+          icon.innerText = 'content_copy';
+          icon.classList.remove('text-[#34D399]');
+        }, 2000);
+      }
+    }).catch(() => {});
+  }
+</script></main><div id="snapdom-sandbox" data-snapdom-sandbox="true" aria-hidden="true" style="position: absolute; left: -9999px; top: -9999px; width: 0px; height: 0px; overflow: hidden;"></div>
+
+</body></html>
